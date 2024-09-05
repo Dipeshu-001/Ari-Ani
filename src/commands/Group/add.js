@@ -13,7 +13,7 @@ module.exports = {
 		const number = q.replace(/\D+/g,'').replace(/\s+/g,'').toString();
 console.log(number) ;
 
-if (!number.length) return m.reply(`Please write the user's number you want to add`)
+if (!number.length) return m.reply(`Please provide user number to add e.g ${client.prefix}add +9198328xxxxx`)
 try {
 if(!client.onWhatsApp(m.from,[`${number}@s.whatsapp.net`])) return m.reply(`the person you are trying to add is not on whatsapp`)
 
